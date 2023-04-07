@@ -4,3 +4,5 @@ services:
         build: .
         image: heymatch/mydevenv
         container_name: mydevenv
+        ports:
+            - "11122:22"
