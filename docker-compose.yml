@@ -4,5 +4,13 @@ services:
         build: .
         image: heymatch/mydevenv
         container_name: mydevenv
+        hostname: mydevenv
+        restart: always
         ports:
             - "11122:22"
+        volumes:
+            - ~/workspace:/home/heymatch/workspace
+        command: 
+            # - chown heymatch /home/heymatch/workspace
+# volumes:
+    # workspace:
