@@ -10,6 +10,8 @@ services:
             - "11122:22"
         volumes:
             - ~/workspace:/home/heymatch/workspace
+        environment:
+            - TZ=Asia/Taipei
         command: 
             # - chown heymatch /home/heymatch/workspace
 # volumes:
